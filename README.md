@@ -1,5 +1,4 @@
-# serilum-forge-maven
-A manual maven for library mods on Serilum's CurseForge.
+## A manual maven for Serilum's Minecraft mods.
 
 To add the repository to your project, add this to your **build.gradle**:
 
@@ -18,9 +17,9 @@ $ gradlew --refresh-dependencies
 ```
 
 # Active library mods:
-- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective)
+- [Collective](https://curseforge.com/minecraft/mc-mods/collective)
 
 
 ### Discontinued library mods:
-- [Find A Block (FAB) Library](https://www.curseforge.com/minecraft/mc-mods/fab-library)
-- [Spawn A Mob (SAM) Library](https://www.curseforge.com/minecraft/mc-mods/sam-library)
+- [Find A Block (FAB) Library](https://curseforge.com/minecraft/mc-mods/fab-library)
+- [Spawn A Mob (SAM) Library](https://curseforge.com/minecraft/mc-mods/sam-library)
