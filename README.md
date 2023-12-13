@@ -6,7 +6,7 @@ To add the repository to your project, add this to your **build.gradle**:
 ```gradle
 repositories {
   maven {
-    url = "https://github.com/ricksouth/serilum-forge-maven/raw/maven/"
+    url = "https://github.com/Serilum/.maven/raw/maven/"
   }
 }
 ```
