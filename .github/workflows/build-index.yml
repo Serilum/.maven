@@ -1,0 +1,42 @@
+name: Build maven index
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [maven]
+    paths:
+      - 'com/**'
+      - '!com/**/maven-metadata.xml'
+      - 'scripts/build_maven_index.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-index
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate versions.json and maven-metadata.xml
+        run: python3 scripts/build_maven_index.py
+
+      - name: Commit generated index
+        run: |
+          git add versions.json 'com/**/maven-metadata.xml'
+          if git diff --cached --quiet; then
+            echo "index already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Rebuild maven index [skip ci]"
+          git push

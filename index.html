@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="identifier-url" content="https://maven.serilum.com/" />
+	<meta name="description" content="A manual Maven repository for Serilum's Minecraft mods and libraries, including Collective." />
+	<meta name="keywords" content="serilum, maven, minecraft, collective, library, gradle" />
+	<meta name="author" content="Rick South" />
+	<link rel="shortcut icon" href="https://serilum.com/assets/images/favicon.ico" type="image/x-icon">
+	<title>Serilum Maven</title>
+	<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+	<header>
+		<h1>Serilum Maven</h1>
+		<p class="tagline">A manual Maven repository for Serilum's Minecraft mods and libraries.</p>
+	</header>
+
+	<main>
+		<section class="usage">
+			<h2>Add the repository</h2>
+			<p>Add the repository to each loader's <code>build.gradle</code>:</p>
+			<div class="code">
+				<button class="copy" type="button" data-copy="gradle-repo">Copy</button>
+				<pre id="gradle-repo"><code>repositories {
+	maven { url "https://maven.serilum.com/" }
+}</code></pre>
+			</div>
+
+			<h2>Dependencies</h2>
+			<p>Pull in the active <a href="https://curseforge.com/minecraft/mc-mods/collective" target="_blank" rel="noopener">Collective</a> library. It ships an artifact per loader plus a shared <code>collective-common</code>, matching the multiloader <code>build.gradle</code> layout:</p>
+
+			<div class="loader">
+				<h3>Common</h3>
+				<div class="code">
+					<button class="copy" type="button" data-copy="dep-common">Copy</button>
+					<pre id="dep-common"><code>dependencies {
+	compileOnly "com.natamus.collective-ml:collective-common:VERSION"
+}</code></pre>
+				</div>
+			</div>
+
+			<div class="loader">
+				<h3>Fabric</h3>
+				<div class="code">
+					<button class="copy" type="button" data-copy="dep-fabric">Copy</button>
+					<pre id="dep-fabric"><code>dependencies {
+	implementation "com.natamus.collective-ml:collective-fabric:VERSION"
+}</code></pre>
+				</div>
+			</div>
+
+			<div class="loader">
+				<h3>Forge</h3>
+				<div class="code">
+					<button class="copy" type="button" data-copy="dep-forge">Copy</button>
+					<pre id="dep-forge"><code>dependencies {
+	implementation "com.natamus.collective-ml:collective-forge:VERSION"
+}</code></pre>
+				</div>
+			</div>
+
+			<div class="loader">
+				<h3>NeoForge</h3>
+				<div class="code">
+					<button class="copy" type="button" data-copy="dep-neoforge">Copy</button>
+					<pre id="dep-neoforge"><code>dependencies {
+	implementation "com.natamus.collective-ml:collective-neoforge:VERSION"
+}</code></pre>
+				</div>
+			</div>
+
+			<p class="hint"><code>VERSION</code> is <code>&lt;minecraft&gt;-&lt;collective&gt;</code>, e.g. the current <code id="latest-ver">latest</code>. Pick the one matching your Minecraft version from the list below. The older <code>github.com/Serilum/.maven/raw/maven/</code> URL keeps working too.</p>
+		</section>
+
+		<section class="browse">
+			<h2>Artifacts</h2>
+			<div id="artifacts"><p class="status">Loading artifacts...</p></div>
+		</section>
+	</main>
+
+	<footer>
+		<p>Served via Cloudflare Pages &middot; <a href="https://github.com/Serilum/.maven" target="_blank" rel="noopener">Source on GitHub</a> &middot; <a href="https://serilum.com" target="_blank" rel="noopener">serilum.com</a></p>
+	</footer>
+
+	<script src="/assets/app.js"></script>
+</body>
+</html>
