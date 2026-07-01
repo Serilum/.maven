@@ -37,7 +37,9 @@ $ gradlew --refresh-dependencies
 ### How the frontend is built
 
 The landing page (`index.html` + `assets/`) is plain HTML/CSS/JS and reads
-`versions.json`. That file, and the per-artifact `maven-metadata.xml`, are
+`versions.json`. That file, the per-artifact `maven-metadata.xml`, and a static
+`index.html` directory listing in every folder (a browsable file index, enhanced
+by `assets/browse.js` for instant in-place navigation and sorting) are all
 generated from the `com/` tree by `scripts/build_maven_index.py`. A GitHub Action
 (`.github/workflows/build-index.yml`) reruns it whenever artifacts are pushed.
 Deployed to Cloudflare Pages (`wrangler.toml`) from this `maven` branch.

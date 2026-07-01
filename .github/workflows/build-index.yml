@@ -7,6 +7,7 @@ on:
     paths:
       - 'com/**'
       - '!com/**/maven-metadata.xml'
+      - '!com/**/index.html'
       - 'scripts/build_maven_index.py'
 
 permissions:
@@ -31,7 +32,7 @@ jobs:
 
       - name: Commit generated index
         run: |
-          git add versions.json 'com/**/maven-metadata.xml'
+          git add versions.json com
           if git diff --cached --quiet; then
             echo "index already up to date"
             exit 0

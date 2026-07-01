@@ -51,6 +51,32 @@ header h1 {
 	font-size: 16px;
 }
 
+.headtop {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.browsebtn {
+	padding: 8px 16px;
+
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--accent);
+	white-space: nowrap;
+
+	background: var(--panel);
+	border: 1px solid var(--accent-soft);
+	border-radius: 6px;
+}
+.browsebtn:hover {
+	color: #1c2416;
+	text-decoration: none;
+	background: var(--accent-soft);
+}
+
 h2 {
 	font-size: 20px;
 	margin: 36px 0 12px;
@@ -241,6 +267,80 @@ p code {
 	font-family: var(--mono);
 	font-size: 13px;
 	min-width: 130px;
+}
+
+/* Directory browser */
+.controls {
+	display: flex;
+	justify-content: flex-end;
+	margin: 12px 0 0;
+}
+.sortbtn {
+	padding: 4px 14px;
+
+	font-family: var(--mono);
+	font-size: 13px;
+	color: var(--text);
+
+	background: var(--panel);
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	cursor: pointer;
+}
+.sortbtn:hover {
+	color: var(--accent);
+	border-color: var(--accent-soft);
+}
+.sortbtn .arrow {
+	color: var(--muted);
+}
+
+.crumbs {
+	margin: 4px 0 0;
+	font-family: var(--mono);
+	font-size: 15px;
+	color: var(--muted);
+	word-break: break-all;
+}
+.crumbs a {
+	color: var(--accent);
+}
+
+.listing {
+	list-style: none;
+	margin: 8px 0 40px;
+	padding: 0;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	background: var(--panel);
+}
+.listing li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px 14px;
+	border-bottom: 1px solid var(--border);
+
+	font-family: var(--mono);
+	font-size: 14px;
+}
+.listing li:last-child {
+	border-bottom: none;
+}
+.listing a {
+	flex: 1;
+	word-break: break-all;
+}
+.listing .dir a {
+	font-weight: 600;
+}
+.listing .up a {
+	color: var(--muted);
+}
+.listing .size {
+	color: var(--muted);
+	font-size: 12px;
+	white-space: nowrap;
 }
 
 footer {
