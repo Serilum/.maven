@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script>try{if(localStorage.getItem("mavenTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="shortcut icon" href="https://serilum.com/assets/images/favicon.ico" type="image/x-icon">
 	<title>Index of /com/natamus/collective-ml/collective/1.20.1-8.35/</title>
@@ -9,7 +10,10 @@
 </head>
 <body class="browse">
 	<header>
-		<h1><a href="/">Serilum Maven</a></h1>
+		<div class="headtop">
+			<h1><a href="/">Serilum Maven</a></h1>
+			<button id="theme" class="iconbtn" type="button" aria-label="Toggle light or dark theme">☀</button>
+		</div>
 		<p class="crumbs">Index of /<a href="/com/">com</a>/<a href="/com/natamus/">natamus</a>/<a href="/com/natamus/collective-ml/">collective-ml</a>/<a href="/com/natamus/collective-ml/collective/">collective</a>/<a href="/com/natamus/collective-ml/collective/1.20.1-8.35/">1.20.1-8.35</a>/</p>
 	</header>
 	<main>
@@ -22,5 +26,6 @@
 		</ul>
 	</main>
 	<script src="/assets/browse.js"></script>
+	<script src="/assets/theme.js"></script>
 </body>
 </html>

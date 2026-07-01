@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script>try{if(localStorage.getItem("mavenTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="identifier-url" content="https://maven.serilum.com/" />
 	<meta name="description" content="A manual Maven repository for Serilum's Minecraft mods and libraries, including Collective." />
@@ -15,7 +16,10 @@
 	<header>
 		<div class="headtop">
 			<h1>Serilum Maven</h1>
-			<a class="browsebtn" href="/com/">Browse files</a>
+			<div class="headactions">
+				<button id="theme" class="iconbtn" type="button" aria-label="Toggle light or dark theme">☀</button>
+				<a class="browsebtn" href="/com/">Browse files</a>
+			</div>
 		</div>
 		<p class="tagline">A manual Maven repository for Serilum's Minecraft mods and libraries.</p>
 	</header>
@@ -74,7 +78,7 @@
 				</div>
 			</div>
 
-			<p class="hint"><code>VERSION</code> is <code>&lt;minecraft&gt;-&lt;collective&gt;</code>, e.g. the current <code id="latest-ver">latest</code>. Pick the one matching your Minecraft version from the list below. The older <code>github.com/Serilum/.maven/raw/maven/</code> URL keeps working too.</p>
+			<p class="hint">Replace <code>VERSION</code> with <code>&lt;minecraft&gt;-&lt;collective&gt;</code> (the current latest is <code id="latest-ver">latest</code>), then pick the one matching your Minecraft version from the list below. The older <code>github.com/Serilum/.maven/raw/maven/</code> URL keeps working too.</p>
 		</section>
 
 		<section class="browse">
@@ -88,5 +92,6 @@
 	</footer>
 
 	<script src="/assets/app.js"></script>
+	<script src="/assets/theme.js"></script>
 </body>
 </html>
