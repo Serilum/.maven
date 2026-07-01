@@ -132,6 +132,14 @@ def human_size(n):
 	return "%.1f PB" % n
 
 
+def file_size(path):
+	# Measure text artifacts as LF
+	if path.endswith((".pom", ".xml")):
+		with open(path, "rb") as f:
+			return len(f.read().replace(b"\r\n", b"\n"))
+	return os.path.getsize(path)
+
+
 def natural_key(name):
 	return [(0, int(t), "") if t.isdigit() else (1, -1, t.lower()) for t in re.split(r"(\d+)", name)]
 
@@ -200,7 +208,7 @@ def write_directory_indexes():
 
 		files = sorted((f for f in filenames if f != "index.html" and not f.startswith(".")), key=natural_key, reverse=newest_first)
 		for name in files:
-			size = human_size(os.path.getsize(os.path.join(dirpath, name)))
+			size = human_size(file_size(os.path.join(dirpath, name)))
 			rows.append('\t\t\t<li class="file" data-name="%s"><a href="%s%s">%s</a><span class="size">%s</span></li>' % (name, base, name, name, size))
 
 		html = DIR_PAGE % (rel, breadcrumb(rel), button, "\n".join(rows))

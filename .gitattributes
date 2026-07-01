@@ -1,0 +1,4 @@
+# Keep text artifacts (poms, metadata, the generated site) LF everywhere,
+# even when checked out or built on Windows. Jars are left untouched.
+* text=auto eol=lf
+*.jar binary
