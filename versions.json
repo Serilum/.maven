@@ -1,5 +1,5 @@
 {
-	"generated": "2026-09-21T14:00:32Z",
+	"generated": "2026-10-01T09:12:40Z",
 	"baseUrl": "https://maven.serilum.com",
 	"groups": [
 		{
@@ -7477,6 +7477,62 @@
 								"samlibrary-1.14.4-0.1-sources.jar",
 								"samlibrary-1.14.4-0.1-javadoc.jar",
 								"samlibrary-1.14.4-0.1-deobf.jar"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"groupId": "com.serilum",
+			"path": "com/serilum",
+			"artifacts": [
+				{
+					"artifactId": "tether",
+					"path": "com/serilum/tether",
+					"latest": "1.0",
+					"versions": [
+						{
+							"version": "1.0",
+							"files": [
+								"tether-1.0.jar",
+								"tether-1.0.pom",
+								"tether-1.0.jar.md5",
+								"tether-1.0.jar.sha1",
+								"tether-1.0.jar.sha256",
+								"tether-1.0.jar.sha512",
+								"tether-1.0.module",
+								"tether-1.0.module.md5",
+								"tether-1.0.module.sha1",
+								"tether-1.0.module.sha256",
+								"tether-1.0.module.sha512",
+								"tether-1.0.pom.md5",
+								"tether-1.0.pom.sha1",
+								"tether-1.0.pom.sha256",
+								"tether-1.0.pom.sha512"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"groupId": "com.serilum.tether",
+			"path": "com/serilum/tether",
+			"artifacts": [
+				{
+					"artifactId": "com.serilum.tether.gradle.plugin",
+					"path": "com/serilum/tether/com.serilum.tether.gradle.plugin",
+					"latest": "1.0",
+					"versions": [
+						{
+							"version": "1.0",
+							"files": [
+								"com.serilum.tether.gradle.plugin-1.0.pom",
+								"com.serilum.tether.gradle.plugin-1.0.pom.md5",
+								"com.serilum.tether.gradle.plugin-1.0.pom.sha1",
+								"com.serilum.tether.gradle.plugin-1.0.pom.sha256",
+								"com.serilum.tether.gradle.plugin-1.0.pom.sha512"
 							]
 						}
 					]
