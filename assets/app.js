@@ -1,6 +1,7 @@
 "use strict";
 
-var ACTIVE_GROUPS = ["com.natamus.collective-ml"];
+var ACTIVE_GROUPS = ["com.natamus.collective-ml", "com.serilum"];
+var CHECKSUM_EXTENSIONS = [".md5", ".sha1", ".sha256", ".sha512"];
 
 document.addEventListener("DOMContentLoaded", function () {
 	loadArtifacts();
@@ -29,6 +30,7 @@ function renderGroups(groups) {
 	var active = [];
 	var legacy = [];
 	groups.forEach(function (g) {
+		if (isPluginMarkerGroup(g)) return;
 		(ACTIVE_GROUPS.indexOf(g.groupId) !== -1 ? active : legacy).push(g);
 	});
 
@@ -43,6 +45,12 @@ function renderGroups(groups) {
 		});
 	}
 	return html;
+}
+
+function isPluginMarkerGroup(group) {
+	return group.artifacts.every(function (a) {
+		return a.artifactId.endsWith(".gradle.plugin");
+	});
 }
 
 function renderGroup(group) {
@@ -84,6 +92,11 @@ function renderArtifact(groupId, artifact) {
 
 function renderFiles(basePath, version) {
 	return version.files
+		.filter(function (name) {
+			return !CHECKSUM_EXTENSIONS.some(function (ext) {
+				return name.endsWith(ext);
+			});
+		})
 		.map(function (name) {
 			var url = "/" + basePath + "/" + version.version + "/" + name;
 			return '<a class="file" href="' + url + '" title="' + name + '">' + classifyFile(name) + "</a>";
@@ -104,26 +117,31 @@ function classifyFile(name) {
 }
 
 function fillLatestVersion(data) {
-	var version = latestCollectiveVersion(data);
+	fillPlaceholder("VERSION", latestVersion(data, "com.natamus.collective-ml", "collective"));
+	fillPlaceholder("TETHERVER", latestVersion(data, "com.serilum", "tether"));
+
+	var version = latestVersion(data, "com.natamus.collective-ml", "collective");
+	var span = document.getElementById("latest-ver");
+	if (version && span) span.textContent = version;
+}
+
+function fillPlaceholder(placeholder, version) {
 	if (!version) return;
 
 	document.querySelectorAll(".usage pre code").forEach(function (code) {
-		if (code.textContent.indexOf("VERSION") !== -1) {
-			code.textContent = code.textContent.replace(/VERSION/g, version);
+		if (code.textContent.indexOf(placeholder) !== -1) {
+			code.textContent = code.textContent.split(placeholder).join(version);
 		}
 	});
-
-	var span = document.getElementById("latest-ver");
-	if (span) span.textContent = version;
 }
 
-function latestCollectiveVersion(data) {
+function latestVersion(data, groupId, artifactId) {
 	var groups = data.groups || [];
 	for (var i = 0; i < groups.length; i++) {
-		if (groups[i].groupId !== "com.natamus.collective-ml") continue;
+		if (groups[i].groupId !== groupId) continue;
 		var arts = groups[i].artifacts;
 		for (var j = 0; j < arts.length; j++) {
-			if (arts[j].artifactId === "collective" && arts[j].latest) return arts[j].latest;
+			if (arts[j].artifactId === artifactId && arts[j].latest) return arts[j].latest;
 		}
 	}
 	return null;

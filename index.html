@@ -5,7 +5,7 @@
 	<script>try{if(localStorage.getItem("mavenTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="identifier-url" content="https://maven.serilum.com/" />
-	<meta name="description" content="A manual Maven repository for Serilum's Minecraft mods and libraries, including Collective." />
+	<meta name="description" content="A manual Maven repository for Serilum's Minecraft mods and libraries, including Collective and the Tether Gradle plugin." />
 	<meta name="keywords" content="serilum, maven, minecraft, collective, library, gradle" />
 	<meta name="author" content="Rick South" />
 	<link rel="shortcut icon" href="https://serilum.com/assets/images/favicon.ico" type="image/x-icon">
@@ -79,6 +79,25 @@
 			</div>
 
 			<p class="hint">Replace <code>VERSION</code> with <code>&lt;minecraft&gt;-&lt;collective&gt;</code> (the current latest is <code id="latest-ver">latest</code>), then pick the one matching your Minecraft version from the list below. The older <code>github.com/Serilum/.maven/raw/maven/</code> URL keeps working too.</p>
+
+			<h2>Gradle plugin</h2>
+			<p><a href="https://github.com/Serilum/.tether-gradle-plugin" target="_blank" rel="noopener">Tether</a> adds the library dependencies a mod needs for you, for each loader and Minecraft version. Add the repository to <code>settings.gradle</code>:</p>
+			<div class="code">
+				<button class="copy" type="button" data-copy="tether-settings">Copy</button>
+				<pre id="tether-settings"><code>pluginManagement {
+	repositories {
+		maven { url "https://maven.serilum.com/" }
+		gradlePluginPortal()
+	}
+}</code></pre>
+			</div>
+			<p>Then apply it in each loader's <code>build.gradle</code>, after the loader's own plugin:</p>
+			<div class="code">
+				<button class="copy" type="button" data-copy="tether-plugin">Copy</button>
+				<pre id="tether-plugin"><code>plugins {
+	id 'com.serilum.tether' version 'TETHERVER'
+}</code></pre>
+			</div>
 		</section>
 
 		<section class="browse">
