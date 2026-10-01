@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.serilum",
+    "module": "tether",
+    "version": "1.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "tether-1.3.jar",
+          "url": "tether-1.3.jar",
+          "size": 13475,
+          "sha512": "307e94fa45bcc1af5a8c2f4cf430825a7756aceb08df5037e3b0b2b39bfd533cec2e0fe53a74f7dc49c39a02233764e1bfae41be1e0196de961963805376fd29",
+          "sha256": "f9d5444837e6b08984a762d68e765ac286649b2f8f652f839dec50fed0692c4c",
+          "sha1": "0ab6dd58e3358c6d5dd5d2e15d630adc6ba55b0a",
+          "md5": "c75c6b0866183210f14e13141c1659b0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tether-1.3.jar",
+          "url": "tether-1.3.jar",
+          "size": 13475,
+          "sha512": "307e94fa45bcc1af5a8c2f4cf430825a7756aceb08df5037e3b0b2b39bfd533cec2e0fe53a74f7dc49c39a02233764e1bfae41be1e0196de961963805376fd29",
+          "sha256": "f9d5444837e6b08984a762d68e765ac286649b2f8f652f839dec50fed0692c4c",
+          "sha1": "0ab6dd58e3358c6d5dd5d2e15d630adc6ba55b0a",
+          "md5": "c75c6b0866183210f14e13141c1659b0"
+        }
+      ]
+    }
+  ]
+}
