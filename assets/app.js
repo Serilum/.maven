@@ -1,6 +1,8 @@
 "use strict";
 
-var ACTIVE_GROUPS = ["com.natamus.collective-ml", "com.serilum"];
+var ACTIVE_GROUPS = ["com.serilum.collective", "com.natamus.collective-ml", "com.serilum"];
+// Collective is in com.natamus.collective-ml up to Minecraft 26.3.0 and in com.serilum.collective after.
+var COLLECTIVE_GROUPS = ["com.serilum.collective", "com.natamus.collective-ml"];
 var CHECKSUM_EXTENSIONS = [".md5", ".sha1", ".sha256", ".sha512"];
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -117,12 +119,36 @@ function classifyFile(name) {
 }
 
 function fillLatestVersion(data) {
-	fillPlaceholder("VERSION", latestVersion(data, "com.natamus.collective-ml", "collective"));
+	var collective = latestCollective(data);
+	if (collective) {
+		fillPlaceholder("COLLECTIVEGROUP", collective.groupId);
+		fillPlaceholder("VERSION", collective.version);
+	}
 	fillPlaceholder("TETHERVER", latestVersion(data, "com.serilum", "tether"));
 
-	var version = latestVersion(data, "com.natamus.collective-ml", "collective");
 	var span = document.getElementById("latest-ver");
-	if (version && span) span.textContent = version;
+	if (collective && span) span.textContent = collective.version;
+}
+
+function latestCollective(data) {
+	var best = null;
+	COLLECTIVE_GROUPS.forEach(function (groupId) {
+		var version = latestVersion(data, groupId, "collective");
+		if (version && (!best || compareVersions(version, best.version) > 0)) {
+			best = { groupId: groupId, version: version };
+		}
+	});
+	return best;
+}
+
+function compareVersions(a, b) {
+	var partsA = (a.match(/\d+/g) || []).map(Number);
+	var partsB = (b.match(/\d+/g) || []).map(Number);
+	for (var i = 0; i < Math.max(partsA.length, partsB.length); i++) {
+		var difference = (partsA[i] || 0) - (partsB[i] || 0);
+		if (difference !== 0) return difference;
+	}
+	return 0;
 }
 
 function fillPlaceholder(placeholder, version) {

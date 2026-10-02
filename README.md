@@ -25,7 +25,7 @@ $ gradlew --refresh-dependencies
 ```
 
 # Active library mods:
-- [Collective](https://curseforge.com/minecraft/mc-mods/collective) (`com.natamus.collective-ml:collective`)
+- [Collective](https://curseforge.com/minecraft/mc-mods/collective) (`com.natamus.collective-ml:collective` for Minecraft 26.3.0 and older, `com.serilum.collective:collective` for newer versions)
 
 # Gradle plugin:
 - [Tether](https://github.com/Serilum/.tether-gradle-plugin) (`com.serilum.tether`) adds the library mods a mod needs to its build, for each loader and Minecraft version. To use it, add the repository to `pluginManagement` in your **settings.gradle** instead.
