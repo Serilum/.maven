@@ -1,5 +1,5 @@
 {
-	"generated": "2026-10-11T12:03:07Z",
+	"generated": "2026-10-11T14:45:07Z",
 	"baseUrl": "https://maven.serilum.com",
 	"groups": [
 		{
@@ -8250,8 +8250,16 @@
 				{
 					"artifactId": "tether",
 					"path": "com/serilum/tether",
-					"latest": "1.4",
+					"latest": "1.5",
 					"versions": [
+						{
+							"version": "1.5",
+							"files": [
+								"tether-1.5.jar",
+								"tether-1.5.pom",
+								"tether-1.5.module"
+							]
+						},
 						{
 							"version": "1.4",
 							"files": [
@@ -8303,8 +8311,14 @@
 				{
 					"artifactId": "com.serilum.tether.gradle.plugin",
 					"path": "com/serilum/tether/com.serilum.tether.gradle.plugin",
-					"latest": "1.4",
+					"latest": "1.5",
 					"versions": [
+						{
+							"version": "1.5",
+							"files": [
+								"com.serilum.tether.gradle.plugin-1.5.pom"
+							]
+						},
 						{
 							"version": "1.4",
 							"files": [
