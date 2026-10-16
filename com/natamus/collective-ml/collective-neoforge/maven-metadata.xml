@@ -3,8 +3,8 @@
 	<groupId>com.natamus.collective-ml</groupId>
 	<artifactId>collective-neoforge</artifactId>
 	<versioning>
-		<latest>26.3.0-8.54</latest>
-		<release>26.3.0-8.54</release>
+		<latest>26.3.0-8.55</latest>
+		<release>26.3.0-8.55</release>
 		<versions>
 			<version>1.20.2-7.30</version>
 			<version>1.20.3-7.13</version>
@@ -61,6 +61,7 @@
 			<version>1.21.1-8.52</version>
 			<version>1.21.1-8.53</version>
 			<version>1.21.1-8.54</version>
+			<version>1.21.1-8.55</version>
 			<version>1.21.2-7.89</version>
 			<version>1.21.3-7.89</version>
 			<version>1.21.4-7.90</version>
@@ -164,6 +165,7 @@
 			<version>26.2.0-8.52</version>
 			<version>26.2.0-8.53</version>
 			<version>26.2.0-8.54</version>
+			<version>26.2.0-8.55</version>
 			<version>26.3.0-8.39</version>
 			<version>26.3.0-8.40</version>
 			<version>26.3.0-8.41</version>
@@ -180,7 +182,8 @@
 			<version>26.3.0-8.52</version>
 			<version>26.3.0-8.53</version>
 			<version>26.3.0-8.54</version>
+			<version>26.3.0-8.55</version>
 		</versions>
-		<lastUpdated>20261016190416</lastUpdated>
+		<lastUpdated>20261016204833</lastUpdated>
 	</versioning>
 </metadata>
