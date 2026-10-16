@@ -1,6 +1,10 @@
 .git
+.gitattributes
 .github
+.gitignore
+.wrangler
 README.md
+wrangler.toml
 scripts
 __pycache__
 *.py
