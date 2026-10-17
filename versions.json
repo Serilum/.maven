@@ -1,5 +1,5 @@
 {
-	"generated": "2026-10-17T11:21:36Z",
+	"generated": "2026-10-17T22:56:16Z",
 	"baseUrl": "https://maven.serilum.com",
 	"groups": [
 		{
@@ -283,8 +283,16 @@
 				{
 					"artifactId": "collective",
 					"path": "com/natamus/collective-ml/collective",
-					"latest": "26.3.0-8.57",
+					"latest": "26.3.0-8.58",
 					"versions": [
+						{
+							"version": "26.3.0-8.58",
+							"files": [
+								"collective-26.3.0-8.58.jar",
+								"collective-26.3.0-8.58.pom",
+								"collective-26.3.0-8.58-sources.jar"
+							]
+						},
 						{
 							"version": "26.3.0-8.57",
 							"files": [
@@ -435,6 +443,14 @@
 								"collective-26.3.0-8.39.jar",
 								"collective-26.3.0-8.39.pom",
 								"collective-26.3.0-8.39-sources.jar"
+							]
+						},
+						{
+							"version": "26.2.0-8.58",
+							"files": [
+								"collective-26.2.0-8.58.jar",
+								"collective-26.2.0-8.58.pom",
+								"collective-26.2.0-8.58-sources.jar"
 							]
 						},
 						{
@@ -1341,6 +1357,14 @@
 							]
 						},
 						{
+							"version": "1.21.1-8.58",
+							"files": [
+								"collective-1.21.1-8.58.jar",
+								"collective-1.21.1-8.58.pom",
+								"collective-1.21.1-8.58-sources.jar"
+							]
+						},
+						{
 							"version": "1.21.1-8.57",
 							"files": [
 								"collective-1.21.1-8.57.jar",
@@ -1829,6 +1853,14 @@
 							]
 						},
 						{
+							"version": "1.20.1-8.58",
+							"files": [
+								"collective-1.20.1-8.58.jar",
+								"collective-1.20.1-8.58.pom",
+								"collective-1.20.1-8.58-sources.jar"
+							]
+						},
+						{
 							"version": "1.20.1-8.57",
 							"files": [
 								"collective-1.20.1-8.57.jar",
@@ -2312,8 +2344,16 @@
 				{
 					"artifactId": "collective-common",
 					"path": "com/natamus/collective-ml/collective-common",
-					"latest": "26.3.0-8.57",
+					"latest": "26.3.0-8.58",
 					"versions": [
+						{
+							"version": "26.3.0-8.58",
+							"files": [
+								"collective-common-26.3.0-8.58.jar",
+								"collective-common-26.3.0-8.58.pom",
+								"collective-common-26.3.0-8.58-sources.jar"
+							]
+						},
 						{
 							"version": "26.3.0-8.57",
 							"files": [
@@ -2464,6 +2504,14 @@
 								"collective-common-26.3.0-8.39.jar",
 								"collective-common-26.3.0-8.39.pom",
 								"collective-common-26.3.0-8.39-sources.jar"
+							]
+						},
+						{
+							"version": "26.2.0-8.58",
+							"files": [
+								"collective-common-26.2.0-8.58.jar",
+								"collective-common-26.2.0-8.58.pom",
+								"collective-common-26.2.0-8.58-sources.jar"
 							]
 						},
 						{
@@ -3370,6 +3418,14 @@
 							]
 						},
 						{
+							"version": "1.21.1-8.58",
+							"files": [
+								"collective-common-1.21.1-8.58.jar",
+								"collective-common-1.21.1-8.58.pom",
+								"collective-common-1.21.1-8.58-sources.jar"
+							]
+						},
+						{
 							"version": "1.21.1-8.57",
 							"files": [
 								"collective-common-1.21.1-8.57.jar",
@@ -3867,6 +3923,14 @@
 							]
 						},
 						{
+							"version": "1.20.1-8.58",
+							"files": [
+								"collective-common-1.20.1-8.58.jar",
+								"collective-common-1.20.1-8.58.pom",
+								"collective-common-1.20.1-8.58-sources.jar"
+							]
+						},
+						{
 							"version": "1.20.1-8.57",
 							"files": [
 								"collective-common-1.20.1-8.57.jar",
@@ -4350,8 +4414,16 @@
 				{
 					"artifactId": "collective-fabric",
 					"path": "com/natamus/collective-ml/collective-fabric",
-					"latest": "26.3.0-8.57",
+					"latest": "26.3.0-8.58",
 					"versions": [
+						{
+							"version": "26.3.0-8.58",
+							"files": [
+								"collective-fabric-26.3.0-8.58.jar",
+								"collective-fabric-26.3.0-8.58.pom",
+								"collective-fabric-26.3.0-8.58-sources.jar"
+							]
+						},
 						{
 							"version": "26.3.0-8.57",
 							"files": [
@@ -4502,6 +4574,14 @@
 								"collective-fabric-26.3.0-8.39.jar",
 								"collective-fabric-26.3.0-8.39.pom",
 								"collective-fabric-26.3.0-8.39-sources.jar"
+							]
+						},
+						{
+							"version": "26.2.0-8.58",
+							"files": [
+								"collective-fabric-26.2.0-8.58.jar",
+								"collective-fabric-26.2.0-8.58.pom",
+								"collective-fabric-26.2.0-8.58-sources.jar"
 							]
 						},
 						{
@@ -5408,6 +5488,14 @@
 							]
 						},
 						{
+							"version": "1.21.1-8.58",
+							"files": [
+								"collective-fabric-1.21.1-8.58.jar",
+								"collective-fabric-1.21.1-8.58.pom",
+								"collective-fabric-1.21.1-8.58-sources.jar"
+							]
+						},
+						{
 							"version": "1.21.1-8.57",
 							"files": [
 								"collective-fabric-1.21.1-8.57.jar",
@@ -5896,6 +5984,14 @@
 							]
 						},
 						{
+							"version": "1.20.1-8.58",
+							"files": [
+								"collective-fabric-1.20.1-8.58.jar",
+								"collective-fabric-1.20.1-8.58.pom",
+								"collective-fabric-1.20.1-8.58-sources.jar"
+							]
+						},
+						{
 							"version": "1.20.1-8.57",
 							"files": [
 								"collective-fabric-1.20.1-8.57.jar",
@@ -6379,8 +6475,16 @@
 				{
 					"artifactId": "collective-forge",
 					"path": "com/natamus/collective-ml/collective-forge",
-					"latest": "26.3.0-8.57",
+					"latest": "26.3.0-8.58",
 					"versions": [
+						{
+							"version": "26.3.0-8.58",
+							"files": [
+								"collective-forge-26.3.0-8.58.jar",
+								"collective-forge-26.3.0-8.58.pom",
+								"collective-forge-26.3.0-8.58-sources.jar"
+							]
+						},
 						{
 							"version": "26.3.0-8.57",
 							"files": [
@@ -6531,6 +6635,14 @@
 								"collective-forge-26.3.0-8.39.jar",
 								"collective-forge-26.3.0-8.39.pom",
 								"collective-forge-26.3.0-8.39-sources.jar"
+							]
+						},
+						{
+							"version": "26.2.0-8.58",
+							"files": [
+								"collective-forge-26.2.0-8.58.jar",
+								"collective-forge-26.2.0-8.58.pom",
+								"collective-forge-26.2.0-8.58-sources.jar"
 							]
 						},
 						{
@@ -7428,6 +7540,14 @@
 							]
 						},
 						{
+							"version": "1.21.1-8.58",
+							"files": [
+								"collective-forge-1.21.1-8.58.jar",
+								"collective-forge-1.21.1-8.58.pom",
+								"collective-forge-1.21.1-8.58-sources.jar"
+							]
+						},
+						{
 							"version": "1.21.1-8.57",
 							"files": [
 								"collective-forge-1.21.1-8.57.jar",
@@ -7904,6 +8024,14 @@
 								"collective-forge-1.20.2-7.30.pom",
 								"collective-forge-1.20.2-7.30-sources.jar",
 								"collective-forge-1.20.2-7.30-javadoc.jar"
+							]
+						},
+						{
+							"version": "1.20.1-8.58",
+							"files": [
+								"collective-forge-1.20.1-8.58.jar",
+								"collective-forge-1.20.1-8.58.pom",
+								"collective-forge-1.20.1-8.58-sources.jar"
 							]
 						},
 						{
@@ -8390,8 +8518,16 @@
 				{
 					"artifactId": "collective-neoforge",
 					"path": "com/natamus/collective-ml/collective-neoforge",
-					"latest": "26.3.0-8.57",
+					"latest": "26.3.0-8.58",
 					"versions": [
+						{
+							"version": "26.3.0-8.58",
+							"files": [
+								"collective-neoforge-26.3.0-8.58.jar",
+								"collective-neoforge-26.3.0-8.58.pom",
+								"collective-neoforge-26.3.0-8.58-sources.jar"
+							]
+						},
 						{
 							"version": "26.3.0-8.57",
 							"files": [
@@ -8542,6 +8678,14 @@
 								"collective-neoforge-26.3.0-8.39.jar",
 								"collective-neoforge-26.3.0-8.39.pom",
 								"collective-neoforge-26.3.0-8.39-sources.jar"
+							]
+						},
+						{
+							"version": "26.2.0-8.58",
+							"files": [
+								"collective-neoforge-26.2.0-8.58.jar",
+								"collective-neoforge-26.2.0-8.58.pom",
+								"collective-neoforge-26.2.0-8.58-sources.jar"
 							]
 						},
 						{
@@ -9445,6 +9589,14 @@
 								"collective-neoforge-1.21.2-7.89.pom",
 								"collective-neoforge-1.21.2-7.89-sources.jar",
 								"collective-neoforge-1.21.2-7.89-javadoc.jar"
+							]
+						},
+						{
+							"version": "1.21.1-8.58",
+							"files": [
+								"collective-neoforge-1.21.1-8.58.jar",
+								"collective-neoforge-1.21.1-8.58.pom",
+								"collective-neoforge-1.21.1-8.58-sources.jar"
 							]
 						},
 						{
