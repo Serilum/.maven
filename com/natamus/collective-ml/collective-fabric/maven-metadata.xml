@@ -3,8 +3,8 @@
 	<groupId>com.natamus.collective-ml</groupId>
 	<artifactId>collective-fabric</artifactId>
 	<versioning>
-		<latest>26.3.0-8.60</latest>
-		<release>26.3.0-8.60</release>
+		<latest>26.3.0-8.61</latest>
+		<release>26.3.0-8.61</release>
 		<versions>
 			<version>1.18.2-7.7</version>
 			<version>1.19.2-7.64</version>
@@ -66,6 +66,7 @@
 			<version>1.20.1-8.58</version>
 			<version>1.20.1-8.59</version>
 			<version>1.20.1-8.60</version>
+			<version>1.20.1-8.61</version>
 			<version>1.20.2-7.30</version>
 			<version>1.20.3-7.13</version>
 			<version>1.20.4-7.64</version>
@@ -127,6 +128,7 @@
 			<version>1.21.1-8.58</version>
 			<version>1.21.1-8.59</version>
 			<version>1.21.1-8.60</version>
+			<version>1.21.1-8.61</version>
 			<version>1.21.2-7.89</version>
 			<version>1.21.3-7.89</version>
 			<version>1.21.4-7.90</version>
@@ -236,6 +238,7 @@
 			<version>26.2.0-8.58</version>
 			<version>26.2.0-8.59</version>
 			<version>26.2.0-8.60</version>
+			<version>26.2.0-8.61</version>
 			<version>26.3.0-8.39</version>
 			<version>26.3.0-8.40</version>
 			<version>26.3.0-8.41</version>
@@ -258,7 +261,8 @@
 			<version>26.3.0-8.58</version>
 			<version>26.3.0-8.59</version>
 			<version>26.3.0-8.60</version>
+			<version>26.3.0-8.61</version>
 		</versions>
-		<lastUpdated>20261020223500</lastUpdated>
+		<lastUpdated>20261021103933</lastUpdated>
 	</versioning>
 </metadata>
